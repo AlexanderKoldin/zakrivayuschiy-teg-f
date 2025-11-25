@@ -4,6 +4,19 @@
   --font-main: "Inter", sans-serif;
   --font-accent: "PressStart2P", monospace;
 
+  --header-title: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
+  --header-subtitle: clamp(0.875rem, 0.1719rem + 2.25vw, 1.4375rem);
+  --header-content-offset: clamp(122px, 8vw, 130px);
+
   --card-title-weight: 700;
   --card-text-weight: 400;
+
+  --page-bg-gradient: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+
+  --block-width: clamp(375px, 90%, 700px);
+
+  --border: 2px solid #000;
+  --bg-color: #fff;
 }
