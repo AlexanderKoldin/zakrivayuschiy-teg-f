@@ -23,4 +23,10 @@
   --bg-color: #fff;
 
   --main-top-offset: 100px;
+
+  --label-fs: 14px;
+  --label-fw: 400;
+  --label-color: 0, 0, 0;
+  --label-opacity: 0.5;
+  --label-stroke-color: #aaa;
 }
