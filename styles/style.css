@@ -202,11 +202,19 @@
 
 .card__dialog-button {
   width: 100%;
-  border: var(--border);
   font-family: var(--font-accent);
+
+  position: relative;
+  z-index: 0;
+  border: var(--border);
+  outline: none;
+  background-color: var(--accent-color, #fff);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+
   padding-inline: 17px;
-  padding-block-start: 9px;
-  padding-block-end: 6px;
+  padding-block: 9px;
 }
 
 .card__img--fresh {
@@ -263,22 +271,6 @@
   outline: none;
   box-shadow: 2px 2px 0 var(--main-color, #000);
   transition: box-shadow 0.3s ease;
-}
-
-.card__dialog-button {
-  position: relative;
-  z-index: 0;
-  border: var(--border);
-  outline: none;
-
-  background-color: var(--accent-color, #fff);
-  font-family: var(--font-accent);
-
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
-  overflow: hidden;
-  padding-inline: 17px;
-  padding-block: 9px;
 }
 
 .card__dialog-button::before {
