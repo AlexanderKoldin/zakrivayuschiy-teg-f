@@ -32,4 +32,8 @@
 
   --main-color: #000000;
   --accent-color: #fff;
+
+  --contour-color: #000;
+  --animation-fill-color: #ff0000;
+  --sparks-color: #ff0000;
 }
