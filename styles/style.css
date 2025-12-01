@@ -141,11 +141,11 @@
 }
 
 .card__like-button {
-  font-family: var(--font-accent);
   width: 130px;
 
   border: var(--border);
   background-color: var(--bg-color);
+  font-family: var(--font-accent);
   padding-inline: 17px;
   padding-block-start: 9px;
   padding-block-end: 6px;
@@ -161,12 +161,12 @@
 
 .button_type_save {
   display: flex;
-  border: var(--border);
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 8px;
   width: min(335px, 100% - 20px);
   margin: 0 auto;
+  border: var(--border);
   padding-block: 17px;
 }
 
@@ -177,11 +177,11 @@
 
 .dialog {
   display: none;
-  border: none;
+  width: 90%;
+  width: clamp(341px, 90%, 353px);
 
   padding: 0;
-  max-width: 341px;
-  width: 90%;
+  border: none;
 }
 
 .dialog[open] {
@@ -190,12 +190,11 @@
 
 .dialog[open] .dialog__content {
   display: flex;
-  gap: 20px;
 
   align-items: center;
+  gap: 20px;
   padding-block: 30px;
   padding-inline: 30px;
-  /* padding-inline: 40px; */
 }
 
 .dialog__message {
@@ -207,9 +206,9 @@
 }
 
 .dialog__icon {
+  flex-shrink: 0;
   width: 39px;
   height: 39px;
-  flex-shrink: 0;
 }
 
 .dialog form {
@@ -218,14 +217,42 @@
 }
 
 .card__dialog-button {
-  font-family: var(--font-accent);
+  width: 100%;
 
   border: var(--border);
   background-color: var(--bg-color);
+  font-family: var(--font-accent);
   padding-inline: 17px;
   padding-block-start: 9px;
   padding-block-end: 6px;
-  width: 100%;
+}
+
+.card__img--fresh {
+  filter: brightness(1.2) contrast(1.1) saturate(1.3);
+}
+
+.card__img--doubt {
+  filter: grayscale(0.5) contrast(1.2) brightness(0.9);
+}
+
+.card__img--chasing {
+  filter: saturate(1.3) contrast(1.2) brightness(1.1);
+}
+
+.card__img--allies {
+  filter: brightness(1.1) sepia(0.2) saturate(1.2);
+}
+
+.card__img--reroute {
+  filter: contrast(1.2) brightness(0.95) hue-rotate(-10deg);
+}
+
+.card__img--overload {
+  filter: grayscale(0.6) contrast(1.1) brightness(0.85) sepia(0.2);
+}
+
+.card__img--present {
+  filter: saturate(1.3) brightness(1.1) contrast(1.05);
 }
 
 @media (width <= 375px) {
