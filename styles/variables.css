@@ -2,7 +2,7 @@
 
 :root {
   --font-main: "Inter", sans-serif;
-  --font-accent: "PressStart2P", monospace;
+  --font-accent: "PressStart2P", fantasy;
 
   --header-title-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
   --header-subtitle-size: clamp(0.875rem, 0.1719rem + 2.25vw, 1.4375rem);
