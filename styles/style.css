@@ -43,7 +43,7 @@
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 52px;
+  gap: 50px;
   margin-block-end: 117px;
 }
 
@@ -105,7 +105,7 @@
 .card__content {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 25px;
   padding: 25px;
 }
 
@@ -220,6 +220,7 @@
 
 .dialog__message {
   font-family: var(--font-accent);
+  font-size: var(--fs-dialog);
   line-height: 150%;
   text-transform: uppercase;
 }
@@ -346,6 +347,14 @@
 }
 
 @media (width <= 375px) {
+  .header {
+    gap: 20px;
+  }
+
+  .card__title {
+    padding-block: 6px;
+  }
+
   .button_type_save {
     flex-direction: column;
   }
